@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "debug": "asc index.ts --target debug",
+    "build": "asc index.ts --target release"
+  },
+  "devDependencies": {
+    "assemblyscript": "^0.27.25"
+  }
+}
