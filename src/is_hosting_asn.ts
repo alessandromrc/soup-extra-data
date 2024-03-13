@@ -1,3 +1,5 @@
+// To compile: npm run is_hosting_asn
+
 export function is_hosting_asn(asn: u32): bool
 {
     return asn == 3214 // xTom GmbH
