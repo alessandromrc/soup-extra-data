@@ -1,0 +1,3 @@
+local base64 = require "pluto:base64"
+
+io.contents("build/release.wasm") |> base64.encode |> print
