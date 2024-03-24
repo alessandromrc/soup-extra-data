@@ -32,6 +32,7 @@
 	(data (i32.const 242) "m247")
 	(data (i32.const 247) "leaseweb")
 	(data (i32.const 256) "ipxo")
+	(data (i32.const 261) "China Telecom")
     (func $blume.strstr (param $haystack i32) (param $needle i32) (result i32) ;; returns a pointer relative to haystack if needle is found, 0 otherwise
         (local $2 i32)
         (local $3 i32)
@@ -272,5 +273,8 @@
         (i32.or (i32.ne (i32.const 0) (call $blume.strstr (local.get $slug) (i32.const 242))))
         (i32.or (i32.ne (i32.const 0) (call $blume.strstr (local.get $slug) (i32.const 247))))
         (i32.or (i32.ne (i32.const 0) (call $blume.strstr (local.get $slug) (i32.const 256)))) ;; AS61317, AS206092
+        )
+    (func (export "asn_name_overwrites") (result i32 i32)
+        (i32.const 4134) (i32.const 261)
         )
     )
