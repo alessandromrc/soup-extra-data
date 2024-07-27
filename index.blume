@@ -145,6 +145,9 @@
         (i32.or (i32.eq (local.get $asn) (i32.const 54203)))
         (i32.or (i32.eq (local.get $asn) (i32.const 22781)))
         (i32.or (i32.eq (local.get $asn) (i32.const 62651)))
+        ;; Proton AG
+        (i32.or (i32.eq (local.get $asn) (i32.const 62371)))
+        (i32.or (i32.eq (local.get $asn) (i32.const 209103)))
         )
     (func (export "is_hosting_slug") (param $slug i32) (result i32)
         (i32.ne (i32.const 0) (call $blume.strstr (local.get $slug) (str.ptr "cdn")))
