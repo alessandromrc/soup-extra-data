@@ -149,6 +149,9 @@
         ;; Proton AG
         (i32.or (i32.eq (local.get $asn) (i32.const 62371)))
         (i32.or (i32.eq (local.get $asn) (i32.const 209103)))
+        ;; Hivelocity
+        (i32.or (i32.eq (local.get $asn) (i32.const 61317)))
+        (i32.or (i32.eq (local.get $asn) (i32.const 29802)))
         )
     (func (export "is_hosting_slug") (param $slug i32) (result i32)
         (i32.ne (i32.const 0) (call $blume.strstr (local.get $slug) (str.ptr "cdn")))
