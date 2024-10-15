@@ -194,6 +194,7 @@
         (i32.or (i32.eq (local.get $asn) (i32.const 206264))) ;; Amarutu Technology Ltd.
         (i32.or (i32.eq (local.get $asn) (i32.const 206092))) ;; Internet Utilities Europe and Asia Limited
         (i32.or (i32.eq (local.get $asn) (i32.const 136258))) ;; BrainStorm Network, Inc
+        (i32.or (i32.eq (local.get $asn) (i32.const 56485))) ;; Oleksandr Siedinkin
         ;; NForce Entertainment B.V.
         (i32.or (i32.eq (local.get $asn) (i32.const 43350)))
         (i32.or (i32.eq (local.get $asn) (i32.const 64437))) 
