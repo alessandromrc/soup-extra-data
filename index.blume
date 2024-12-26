@@ -151,9 +151,6 @@
         (i32.or (i32.eq (local.get $asn) (i32.const 54203)))
         (i32.or (i32.eq (local.get $asn) (i32.const 22781)))
         (i32.or (i32.eq (local.get $asn) (i32.const 62651)))
-        ;; Proton AG
-        (i32.or (i32.eq (local.get $asn) (i32.const 62371)))
-        (i32.or (i32.eq (local.get $asn) (i32.const 209103)))
         ;; Hivelocity
         (i32.or (i32.eq (local.get $asn) (i32.const 61317)))
         (i32.or (i32.eq (local.get $asn) (i32.const 29802)))
@@ -192,6 +189,7 @@
         (i32.or (i32.ne (i32.const 0) (call $blume.strstr (local.get $slug) (str.ptr "m247"))))
         (i32.or (i32.ne (i32.const 0) (call $blume.strstr (local.get $slug) (str.ptr "leaseweb"))))
         (i32.or (i32.ne (i32.const 0) (call $blume.strstr (local.get $slug) (str.ptr "ipxo")))) ;; AS61317, AS206092
+        (i32.or (i32.ne (i32.const 0) (call $blume.strstr (local.get $slug) (str.ptr "proton ag"))))
         )
     (func (export "asn_name_overwrites") (result i32 i32)
         (i32.const 4134) (str.ptr "China Telecom")
