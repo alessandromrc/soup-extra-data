@@ -191,7 +191,4 @@
         (i32.or (i32.ne (i32.const 0) (call $blume.strstr (local.get $slug) (str.ptr "ipxo")))) ;; AS61317, AS206092
         (i32.or (i32.ne (i32.const 0) (call $blume.strstr (local.get $slug) (str.ptr "proton ag"))))
         )
-    (func (export "asn_name_overwrites") (result i32 i32)
-        (i32.const 4134) (str.ptr "China Telecom")
-        )
     )
